@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div>
       <NavBar />
-      Home
+      FUNDACIÓN HUELLAS DE LA CALLE - SANTA MARTA
     </div>
   );
 };
