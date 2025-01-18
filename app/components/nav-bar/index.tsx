@@ -1,45 +1,38 @@
 import { NavLink, useParams } from "@remix-run/react";
 import LanguageToggle from "../language-toggle";
 
-const NavBar = () => {
-  const { lang } = useParams(); // Extract the current language from the route params
-  const languagePrefix = lang ? `/${lang}` : ""; // Default to an empty string if no lang is provided
+const Link = ({
+  routeName,
+  displayName,
+}: {
+  routeName: string;
+  displayName: string;
+}) => {
+  const { lang } = useParams();
+  const languagePrefix = lang ? `/${lang}` : "";
 
   return (
-    <nav className="bg-gray-100 flex justify-between pr-10">
-      <ul className="flex border-b">
-        <li className="-mb-px mr-1">
-          <NavLink
-            to={`${languagePrefix}/`}
-            className={({ isActive }) => (isActive ? "active" : "inactive")}
-          >
-            Home
-          </NavLink>
-        </li>
-        <li className="-mb-px mr-1">
-          <NavLink
-            to={`${languagePrefix}/about-us`}
-            className={({ isActive }) => (isActive ? "active" : "inactive")}
-          >
-            About us
-          </NavLink>
-        </li>
-        <li className="-mb-px mr-1">
-          <NavLink
-            to={`${languagePrefix}/donate`}
-            className={({ isActive }) => (isActive ? "active" : "inactive")}
-          >
-            Donate
-          </NavLink>
-        </li>
-        <li className="-mb-px mr-1">
-          <NavLink
-            to={`${languagePrefix}/dogs`}
-            className={({ isActive }) => (isActive ? "active" : "inactive")}
-          >
-            Adoptable dogs
-          </NavLink>
-        </li>
+    <li className="-mb-px mr-1">
+      <NavLink
+        to={`${languagePrefix}/${routeName}`}
+        className={({ isActive }) =>
+          isActive ? "active" : "inactive rounded-t-md"
+        }
+      >
+        {displayName}
+      </NavLink>
+    </li>
+  );
+};
+
+const NavBar = () => {
+  return (
+    <nav className="bg-[#f4ce15] flex justify-between pr-10">
+      <ul className="flex border-b mt-1 ml-1">
+        <Link routeName="" displayName="Home" />
+        <Link routeName="about-us" displayName="About us" />
+        <Link routeName="donate" displayName="Donate" />
+        <Link routeName="dogs" displayName="Dogs" />
       </ul>
       <LanguageToggle />
     </nav>
