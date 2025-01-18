@@ -33,6 +33,7 @@ const NavBar = () => {
         <Link routeName="about-us" displayName="About us" />
         <Link routeName="donate" displayName="Donate" />
         <Link routeName="dogs" displayName="Dogs" />
+        <Link routeName="news" displayName="News" />
       </ul>
       <LanguageToggle />
     </nav>
