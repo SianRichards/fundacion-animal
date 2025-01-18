@@ -1,6 +1,15 @@
 import { useNavigate, useParams } from "@remix-run/react";
+import { useState } from "react";
 
-const LanguageToggle = () => {
+const LanguageButton = ({
+  countryCode,
+  selected,
+  setSelected,
+}: {
+  countryCode: string;
+  selected: string;
+  setSelected: (countryCode: string) => void;
+}) => {
   const navigate = useNavigate();
   const { lang } = useParams();
 
@@ -8,19 +17,39 @@ const LanguageToggle = () => {
     const currentURL = window.location.pathname;
     const newURL = currentURL.replace(`/${lang}`, `/${countryCode}`);
     navigate(newURL);
+    setSelected(countryCode);
   };
 
   return (
-    <div className="flex justify-around border border-black">
-      <button onClick={() => setLanguageParam("en")} className="px-2">
-        EN
-      </button>
-      <button
-        onClick={() => setLanguageParam("es")}
-        className="px-2 border-l border-black"
-      >
-        ES
-      </button>
+    <button
+      onClick={() => setLanguageParam(countryCode)}
+      className={`px-2 ${
+        selected === countryCode ? `bg-[#0d9fe8] text-white` : `bg-[#c6a50f]`
+      }`}
+    >
+      {countryCode.toUpperCase()}
+    </button>
+  );
+};
+
+const LanguageToggle = () => {
+  const { lang } = useParams();
+  const [selected, setSelected] = useState(lang || "en");
+
+  const countryCodes = ["en", "es"];
+
+  return (
+    <div className="flex justify-around border border-black rounded-md my-1">
+      {countryCodes.map((countryCode) => {
+        return (
+          <LanguageButton
+            key={countryCode}
+            countryCode={countryCode}
+            selected={selected}
+            setSelected={setSelected}
+          />
+        );
+      })}
     </div>
   );
 };
