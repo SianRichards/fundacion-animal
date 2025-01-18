@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { NavLink } from "@remix-run/react";
 
 const NavBar = () => {
@@ -8,31 +7,25 @@ const NavBar = () => {
         <li className="-mb-px mr-1">
           <NavLink
             to="/about-us"
-            className={({ isActive }) =>
-              isActive ? "active" : "inactive"
-            }
+            className={({ isActive }) => (isActive ? "active" : "inactive")}
           >
-            About Us
+            About us
           </NavLink>
         </li>
         <li className="-mb-px mr-1">
           <NavLink
             to="/donate"
-            className={({ isActive }) =>
-              isActive ? "active" : "inactive"
-            }
+            className={({ isActive }) => (isActive ? "active" : "inactive")}
           >
             Donate
           </NavLink>
         </li>
         <li className="-mb-px mr-1">
           <NavLink
-            to="/home"
-            className={({ isActive }) =>
-              isActive ? "active" : "inactive"
-            }
+            to="/dogs"
+            className={({ isActive }) => (isActive ? "active" : "inactive")}
           >
-            Home
+            Adoptable dogs
           </NavLink>
         </li>
       </ul>

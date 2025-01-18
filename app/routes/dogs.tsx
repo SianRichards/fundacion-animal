@@ -1,12 +1,12 @@
 import NavBar from "~/components/nav-bar";
 
-const Donate = () => {
+const Dogs = () => {
   return (
     <div>
       <NavBar />
-      Donate
+      Here are our adoptable dogs
     </div>
   );
 };
 
-export default Donate;
+export default Dogs;
