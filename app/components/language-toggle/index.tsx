@@ -23,8 +23,8 @@ const LanguageButton = ({
   return (
     <button
       onClick={() => setLanguageParam(countryCode)}
-      className={`px-2 ${
-        selected === countryCode ? `bg-[#0d9fe8] text-white` : `bg-[#c6a50f]`
+      className={`px-2 text-white ${
+        selected === countryCode ? `bg-[#0d9fe8]` : `bg-[#006ba1]`
       }`}
     >
       {countryCode.toUpperCase()}
