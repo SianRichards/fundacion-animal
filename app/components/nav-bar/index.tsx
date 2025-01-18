@@ -1,12 +1,23 @@
-import { NavLink } from "@remix-run/react";
+import { NavLink, useParams } from "@remix-run/react";
 
 const NavBar = () => {
+  const { lang } = useParams(); // Extract the current language from the route params
+  const languagePrefix = lang ? `/${lang}` : ""; // Default to an empty string if no lang is provided
+
   return (
-    <nav>
+    <nav className="bg-gray-100">
       <ul className="flex border-b">
         <li className="-mb-px mr-1">
           <NavLink
-            to="/about-us"
+            to={`${languagePrefix}/`}
+            className={({ isActive }) => (isActive ? "active" : "inactive")}
+          >
+            Home
+          </NavLink>
+        </li>
+        <li className="-mb-px mr-1">
+          <NavLink
+            to={`${languagePrefix}/about-us`}
             className={({ isActive }) => (isActive ? "active" : "inactive")}
           >
             About us
@@ -14,7 +25,7 @@ const NavBar = () => {
         </li>
         <li className="-mb-px mr-1">
           <NavLink
-            to="/donate"
+            to={`${languagePrefix}/donate`}
             className={({ isActive }) => (isActive ? "active" : "inactive")}
           >
             Donate
@@ -22,7 +33,7 @@ const NavBar = () => {
         </li>
         <li className="-mb-px mr-1">
           <NavLink
-            to="/dogs"
+            to={`${languagePrefix}/dogs`}
             className={({ isActive }) => (isActive ? "active" : "inactive")}
           >
             Adoptable dogs
@@ -34,3 +45,4 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
