@@ -1,10 +1,46 @@
 {
-  "news": "Noticias",
-  "adoptable-dogs": "Perros adoptables",
-  "about-us": "Sobre nosotros",
-  "how-to-help": "Cómo ayudar",
-  "home": "Inicio",
-  "home-page-tag-line": "Ayudamos a los animales abandonados",
-  "about-us-title": "Sobre Nosotros",
-  "about-us-content": "Desde 2011, hemos estado en una misión en Santa Marta, Colombia, para poner fin al sufrimiento de los animales de compañía. Rescatamos, esterilizamos y encontramos hogares llenos de amor para los perros y gatos callejeros. Pero nuestro enfoque real es la prevención. Los animales de compañía sienten igual que nosotros: experimentan amor y dolor. Nuestro objetivo es educar a la comunidad sobre sus necesidades para romper el ciclo de negligencia, maltrato y abandono. Junto con nuestros dedicados donantes y voluntarios, podemos marcar una diferencia real. Sé parte de nuestra misión. Ayúdanos hoy."
+  "navigation": {
+    "home": "Inicio",
+    "news": "Noticias",
+    "adoptable-dogs": "Perros adoptables",
+    "about-us": "Sobre nosotros",
+    "how-to-help": "Cómo ayudar"
+  },
+
+  "global": {
+    "organisation-name": "Fundación Huellas de la Calle"
+  },
+
+  "footer": {
+    "site-developer": "Desarrolladora del sitio"
+  },
+
+  "home": {
+    "title": "Inicio",
+    "tag-line": "Ayudamos a los animales abandonados"
+  },
+
+  "about-us": {
+    "title": "Sobre Nosotros",
+    "content": "Desde 2011, hemos estado en una misión en Santa Marta, Colombia, para poner fin al sufrimiento de los animales de compañía. Rescatamos, esterilizamos y encontramos hogares llenos de amor para los perros y gatos callejeros. Pero nuestro enfoque real es la prevención. Los animales de compañía sienten igual que nosotros: experimentan amor y dolor. Nuestro objetivo es educar a la comunidad sobre sus necesidades para romper el ciclo de negligencia, maltrato y abandono. Junto con nuestros dedicados donantes y voluntarios, podemos marcar una diferencia real. Sé parte de nuestra misión. Ayúdanos hoy."
+  },
+
+  "how-to-help": {
+    "helping-abandoned-animals": "Ayudando a los animales abandonados a encontrar esperanza y cuidado",
+    "ways-to-donate": "Formas de Donar",
+    "bancolombia-savings-account": "Bancolombia - Cuenta de Ahorros",
+    "account-number": "Número de cuenta",
+    "bancolombia-ahorro-a-la-mano": "Bancolombia - Ahorro a la Mano",
+    "nequi": "Nequi",
+    "why-your-support-matters": "Por Qué Tu Apoyo Es Importante",
+    "support-impact-description": "Con tus contribuciones, estás ayudando a salvar innumerables vidas. Tus donaciones se destinan a:",
+    "rescuing-abandoned-animals": "Rescatar animales abandonados",
+    "providing-food-medical-care": "Proveer comida y atención médica",
+    "finding-loving-homes": "Encontrar hogares amorosos para los animales necesitados",
+    "follow-us-on-social-media": "Síguenos en Redes Sociales",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "join-facebook-group": "Únete al grupo de Facebook",
+    "facebook-group-name": "Casos Santa Marta 🐾"
+  }
 }

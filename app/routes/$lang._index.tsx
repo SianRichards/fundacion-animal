@@ -27,10 +27,10 @@ export default function Index() {
     <PageWrapper languageStrings={languageStrings}>
       <div className="flex flex-col items-center flex-grow gap-5 py-5">
         <h1 className="pt-2 text-3xl font-extrabold">
-          FUNDACIÓN HUELLAS DE LA CALLE - SANTA MARTA
+          {languageStrings["global"]["organisation-name"]}
         </h1>
         <h2 className="font-bold text-xl">
-          {languageStrings["home-page-tag-line"]}
+          {languageStrings["home"]["title"]}
         </h2>
         <img src={Logo} width="350" height="auto" alt="logo" />
       </div>

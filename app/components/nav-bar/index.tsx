@@ -28,17 +28,26 @@ const NavBar = ({ languageStrings }) => {
   return (
     <nav className="bg-[#f4ce15] flex justify-between pr-10 border-b border-blue-900">
       <ul className="flex border-b mt-1 ml-1">
-        <Link routeName="" displayName={languageStrings["home"]} />
-        <Link routeName="about-us" displayName={languageStrings["about-us"]} />
+        <Link
+          routeName=""
+          displayName={languageStrings["navigation"]["home"]}
+        />
+        <Link
+          routeName="about-us"
+          displayName={languageStrings["navigation"]["about-us"]}
+        />
         <Link
           routeName="how-to-help"
-          displayName={languageStrings["how-to-help"]}
+          displayName={languageStrings["navigation"]["how-to-help"]}
         />
         <Link
           routeName="adoptable-dogs"
-          displayName={languageStrings["adoptable-dogs"]}
+          displayName={languageStrings["navigation"]["adoptable-dogs"]}
         />
-        <Link routeName="news" displayName={languageStrings["news"]} />
+        <Link
+          routeName="news"
+          displayName={languageStrings["navigation"]["news"]}
+        />
       </ul>
       <div className="flex gap-4">
         <LanguageToggle />

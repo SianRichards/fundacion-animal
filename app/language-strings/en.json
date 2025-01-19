@@ -1,10 +1,46 @@
 {
-  "news": "News",
-  "adoptable-dogs": "Adoptable dogs",
-  "about-us": "About us",
-  "how-to-help": "How to help",
-  "home": "Home",
-  "home-page-tag-line": "We help abandoned animals",
-  "about-us-title": "About Us",
-  "about-us-content": "Since 2011, we've been on a mission in Santa Marta, Colombia, to end the suffering of companion animals. We rescue, sterilize, and find loving homes for street dogs and cats. But our true focus is prevention. Companion animals feel just like we do — they experience love and pain. Our goal is to educate the community about their needs, so we can break the cycle of neglect, abuse, and abandonment. Together with our dedicated donors and volunteers, we can make a real difference. Be a part of our mission. Help us today."
+  "navigation": {
+    "home": "Home",
+    "news": "News",
+    "adoptable-dogs": "Adoptable dogs",
+    "about-us": "About us",
+    "how-to-help": "How to help"
+  },
+
+  "global": {
+    "organisation-name": "Street Paws Foundation"
+  },
+
+  "footer": {
+    "site-developer": "Site Developer"
+  },
+
+  "home": {
+    "title": "Home",
+    "tag-line": "We help abandoned animals"
+  },
+
+  "about-us": {
+    "title": "About Us",
+    "content": "Since 2011, we've been on a mission in Santa Marta, Colombia, to end the suffering of companion animals. We rescue, sterilize, and find loving homes for street dogs and cats. But our true focus is prevention. Companion animals feel just like we do — they experience love and pain. Our goal is to educate the community about their needs, so we can break the cycle of neglect, abuse, and abandonment. Together with our dedicated donors and volunteers, we can make a real difference. Be a part of our mission. Help us today."
+  },
+
+  "how-to-help": {
+    "helping-abandoned-animals": "Helping abandoned animals find hope and care",
+    "ways-to-donate": "Ways to Donate",
+    "bancolombia-savings-account": "Bancolombia - Savings Account",
+    "account-number": "Account Number",
+    "bancolombia-ahorro-a-la-mano": "Bancolombia - Ahorro a la Mano",
+    "nequi": "Nequi",
+    "why-your-support-matters": "Why Your Support Matters",
+    "support-impact-description": "With your contributions, you're helping save countless lives. Your donations go toward:",
+    "rescuing-abandoned-animals": "Rescuing abandoned animals",
+    "providing-food-medical-care": "Providing food and medical care",
+    "finding-loving-homes": "Finding loving homes for animals in need",
+    "follow-us-on-social-media": "Follow Us on Social Media",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "join-facebook-group": "Join the Facebook Group",
+    "facebook-group-name": "Santa Marta Cases 🐾"
+  }
 }
