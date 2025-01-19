@@ -1,9 +1,8 @@
-import NavBar from "~/components/nav-bar";
 import { useLoaderData } from "@remix-run/react";
 import en from "~/language-strings/en.json";
 import es from "~/language-strings/es.json";
 import { json } from "@remix-run/node";
-import Footer from "~/components/footer";
+import PageWrapper from "~/components/page-wrapper";
 
 export const loader = async ({ params }: { params: { lang: string } }) => {
   const languageStrings = params.lang === "es" ? es : en;
@@ -14,8 +13,7 @@ const AboutUs = () => {
   const { languageStrings } = useLoaderData();
 
   return (
-    <div className="flex flex-col h-screen">
-      <NavBar languageStrings={languageStrings} />
+    <PageWrapper languageStrings={languageStrings}>
       <div className="flex flex-grow flex-col items-center content-center gap-7 bg-santa-marta bg-cover h-full">
         <h1 className="text-3xl font-extrabold text-white mt-10 text-center">
           {languageStrings["about-us"]}
@@ -27,8 +25,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <Footer />
-    </div>
+    </PageWrapper>
   );
 };
 

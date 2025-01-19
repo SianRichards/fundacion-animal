@@ -1,8 +1,8 @@
-import NavBar from "~/components/nav-bar";
 import { useLoaderData } from "@remix-run/react";
 import en from "~/language-strings/en.json";
 import es from "~/language-strings/es.json";
 import { json } from "@remix-run/node";
+import PageWrapper from "~/components/page-wrapper";
 
 export const loader = async ({ params }: { params: { lang: string } }) => {
   const languageStrings = params.lang === "es" ? es : en;
@@ -13,10 +13,13 @@ const AdoptableDogs = () => {
   const { languageStrings } = useLoaderData();
 
   return (
-    <div>
-      <NavBar languageStrings={languageStrings} />
-      Here are our adoptable dogs
-    </div>
+    <PageWrapper languageStrings={languageStrings}>
+      <div className="flex-grow">
+        <h1 className="text-3xl font-extrabold mt-10 text-center">
+          Here are our adoptable dogs
+        </h1>
+      </div>
+    </PageWrapper>
   );
 };
 
