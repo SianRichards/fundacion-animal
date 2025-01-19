@@ -1,14 +1,5 @@
 import { NavLink, useParams } from "@remix-run/react";
 import LanguageToggle from "../language-toggle";
-import { useLoaderData } from "@remix-run/react";
-import en from "~/language-strings/en.json";
-import es from "~/language-strings/es.json";
-import { json } from "@remix-run/node";
-
-export const loader = async ({ params }: { params: { lang: string } }) => {
-  const languageStrings = params.lang === "es" ? es : en;
-  return json({ languageStrings });
-};
 
 const Link = ({
   routeName,
@@ -34,9 +25,7 @@ const Link = ({
   );
 };
 
-const NavBar = () => {
-  const { languageStrings } = useLoaderData();
-
+const NavBar = ({ languageStrings }) => {
   return (
     <nav className="bg-[#f4ce15] flex justify-between pr-10">
       <ul className="flex border-b mt-1 ml-1">

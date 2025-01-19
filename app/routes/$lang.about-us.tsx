@@ -13,12 +13,12 @@ const AboutUs = () => {
   const { languageStrings } = useLoaderData();
 
   return (
-    <div>
-      <NavBar />
-      <div className="flex flex-col items-center content-center mt-5 gap-5">
-        <h1 className="text-2xl font-bold">About Us</h1>
+    <div className="h-screen">
+      <NavBar languageStrings={languageStrings} />
+      <div className="flex flex-col items-center content-center gap-5 bg-santa-marta bg-cover h-full">
+        <h1 className="text-2xl font-bold mt-3">About Us</h1>
         <img src="https://placedog.net/300" />
-        <div className="w-2/3 text-lg">
+        <div className="w-2/3 text-lg bg-white px-1 rounded-md bg-opacity-90">
           <p>{languageStrings["about-us-content"]}</p>
         </div>
       </div>
