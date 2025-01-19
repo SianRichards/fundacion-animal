@@ -15,11 +15,15 @@ const AboutUs = () => {
   return (
     <div className="h-screen">
       <NavBar languageStrings={languageStrings} />
-      <div className="flex flex-col items-center content-center gap-5 bg-santa-marta bg-cover h-full">
-        <h1 className="text-2xl font-bold mt-3">About Us</h1>
-        <img src="https://placedog.net/300" />
-        <div className="w-2/3 text-lg bg-white px-1 rounded-md bg-opacity-90">
-          <p>{languageStrings["about-us-content"]}</p>
+      <div className="flex flex-col items-center content-center gap-7 bg-santa-marta bg-cover h-full">
+        <h1 className="text-2xl font-bold mt-3">
+          {languageStrings["about-us"]}
+        </h1>
+        <div className="flex justify-center gap-4 h-2/5">
+          <img src="https://placedog.net/300" />
+          <div className="w-1/2 text-lg text-center content-center bg-white px-2 rounded-md bg-opacity-90">
+            <p>{languageStrings["about-us-content"]}</p>
+          </div>
         </div>
       </div>
     </div>
