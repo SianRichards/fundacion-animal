@@ -1,6 +1,6 @@
 import NavBar from "~/components/nav-bar";
 
-const Dogs = () => {
+const AdoptableDogs = () => {
   return (
     <div>
       <NavBar />
@@ -9,4 +9,4 @@ const Dogs = () => {
   );
 };
 
-export default Dogs;
+export default AdoptableDogs;

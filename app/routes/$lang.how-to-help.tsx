@@ -1,12 +1,12 @@
 import NavBar from "~/components/nav-bar";
 
-const Donate = () => {
+const HowToHelp = () => {
   return (
     <div>
       <NavBar />
-      Donate
+      How to help
     </div>
   );
 };
 
-export default Donate;
+export default HowToHelp;
