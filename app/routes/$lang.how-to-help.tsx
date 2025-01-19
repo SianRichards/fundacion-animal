@@ -3,6 +3,7 @@ import { useLoaderData } from "@remix-run/react";
 import en from "~/language-strings/en.json";
 import es from "~/language-strings/es.json";
 import { json } from "@remix-run/node";
+import Footer from "~/components/footer";
 
 export const loader = async ({ params }: { params: { lang: string } }) => {
   const languageStrings = params.lang === "es" ? es : en;
@@ -13,10 +14,10 @@ const HowToHelp = () => {
   const { languageStrings } = useLoaderData();
 
   return (
-    <div className="h-screen">
+    <div className="flex flex-col min-h-screen w-full">
       <NavBar languageStrings={languageStrings} />
 
-      <div className="px-6 pb-4 space-y-6">
+      <div className="px-6 pb-4 space-y-6 flex-grow">
         <header className="text-center">
           <h1 className="text-4xl font-extrabold mt-3 mb-2 text-gray-800">
             {languageStrings["how-to-help"]}
@@ -30,7 +31,7 @@ const HowToHelp = () => {
         </header>
 
         <div className="flex gap-4 mx-4">
-          <section className="bg-gray-50 p-6 rounded-lg shadow-md w-1/3">
+          <section className="bg-gray-50 rounded-lg shadow-md w-1/3">
             <h2 className="text-2xl font-bold mb-4 text-gray-800">
               Ways to Donate
             </h2>
@@ -97,7 +98,7 @@ const HowToHelp = () => {
               <li>
                 <span className="font-semibold">Facebook:</span>
                 <a
-                  href="https://www.facebook.com/"
+                  href="https://www.facebook.com/huellasdelacallesm"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:underline ml-2"
@@ -113,6 +114,7 @@ const HowToHelp = () => {
           </section>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

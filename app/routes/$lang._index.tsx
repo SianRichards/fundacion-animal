@@ -5,6 +5,7 @@ import { useLoaderData } from "@remix-run/react";
 import en from "~/language-strings/en.json";
 import es from "~/language-strings/es.json";
 import { json } from "@remix-run/node";
+import Footer from "~/components/footer";
 
 export const meta: MetaFunction = () => {
   return [
@@ -24,9 +25,9 @@ export const loader = async ({ params }: { params: { lang: string } }) => {
 export default function Index() {
   const { languageStrings } = useLoaderData();
   return (
-    <div className="w-full bg-cover bg-center">
+    <div className="flex flex-col min-h-screen w-full bg-cover bg-center">
       <NavBar languageStrings={languageStrings} />
-      <div className="flex flex-col items-center gap-5">
+      <div className="flex flex-col items-center flex-grow gap-5 py-5">
         <h1 className="pt-2 text-3xl font-extrabold">
           FUNDACIÓN HUELLAS DE LA CALLE - SANTA MARTA
         </h1>
@@ -35,6 +36,7 @@ export default function Index() {
         </h2>
         <img src={Logo} width="400" height="auto" alt="logo" />
       </div>
+      <Footer />
     </div>
   );
 }
