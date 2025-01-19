@@ -12,7 +12,8 @@ import styles from "./styles/tailwind.css";
 // links should be exported here if you want to add content to <Links /> under <head>
 // e.g. traditional HTML: <link rel="stylesheet" href="stylesheet_pathway">
 export const links: LinksFunction = () => [
-  ...[{ rel: "stylesheet", href: styles }],
+  { rel: "stylesheet", href: styles },
+  { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
 ];
 
 // routes live inside of <Outlet />

@@ -25,7 +25,7 @@ export default function Index() {
   const { languageStrings } = useLoaderData();
   return (
     <PageWrapper languageStrings={languageStrings}>
-      <div className="flex flex-col items-center flex-grow gap-5 py-5">
+      <div className="flex flex-col items-center flex-grow gap-5 py-5 bg-blue-100">
         <h1 className="pt-2 text-3xl font-extrabold">
           {languageStrings["global"]["organisation-name"]}
         </h1>
