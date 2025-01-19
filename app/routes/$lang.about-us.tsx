@@ -14,9 +14,9 @@ const AboutUs = () => {
   const { languageStrings } = useLoaderData();
 
   return (
-    <div className="h-screen">
+    <div className="flex flex-col h-screen">
       <NavBar languageStrings={languageStrings} />
-      <div className="flex flex-col items-center content-center gap-7 bg-santa-marta bg-cover h-full">
+      <div className="flex flex-grow flex-col items-center content-center gap-7 bg-santa-marta bg-cover h-full">
         <h1 className="text-3xl font-extrabold text-white mt-10 text-center">
           {languageStrings["about-us"]}
         </h1>
