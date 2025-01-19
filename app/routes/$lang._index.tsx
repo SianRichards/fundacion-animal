@@ -30,7 +30,7 @@ export default function Index() {
           {languageStrings["global"]["organisation-name"]}
         </h1>
         <h2 className="font-bold text-xl">
-          {languageStrings["home"]["title"]}
+          {languageStrings["home"]["tag-line"]}
         </h2>
         <img src={Logo} width="350" height="auto" alt="logo" />
       </div>
