@@ -10,6 +10,7 @@ export default {
     extend: {
       backgroundImage: {
         "santa-marta": "url('/images/santa-marta-at-night.jpeg')",
+        "pawprints": "url('/images/pawprints-bg.jpeg')",
       },
     },
   },

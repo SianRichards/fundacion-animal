@@ -39,7 +39,7 @@ const LanguageToggle = () => {
   const countryCodes = ["en", "es"];
 
   return (
-    <div className="flex justify-around border border-black rounded-md my-1">
+    <div className="flex justify-around border border-black rounded-md my-1 mr-2">
       {countryCodes.map((countryCode) => {
         return (
           <LanguageButton

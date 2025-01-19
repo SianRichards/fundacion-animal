@@ -32,7 +32,7 @@ const Link = ({
 
 const NavBar = ({ languageStrings }) => {
   return (
-    <nav className="bg-[#f4ce15] flex justify-between pr-10 border-b border-blue-900">
+    <nav>
       <ul className="flex border-b mt-1 ml-1">
         <Link
           routeName=""
@@ -55,9 +55,6 @@ const NavBar = ({ languageStrings }) => {
           displayName={languageStrings["navigation"]["news"]}
         />
       </ul>
-      <div className="flex gap-4">
-        <LanguageToggle />
-      </div>
     </nav>
   );
 };
