@@ -1,5 +1,6 @@
-import { NavLink, useParams } from "@remix-run/react";
+import { NavLink, useLocation, useParams } from "@remix-run/react";
 import LanguageToggle from "../language-toggle";
+
 const Link = ({
   routeName,
   displayName,
@@ -8,15 +9,20 @@ const Link = ({
   displayName: string;
 }) => {
   const { lang } = useParams();
+  const { pathname } = useLocation();
   const languagePrefix = lang ? `/${lang}` : "";
 
   return (
-    <li className="-mb-px mr-1">
+    <li className="-mb-px mr-1 rounded-t-md">
       <NavLink
         to={`${languagePrefix}/${routeName}`}
-        className={({ isActive }) =>
-          isActive ? "active" : "inactive rounded-t-md"
-        }
+        className={({ isActive }) => {
+          const isExactHome =
+            routeName === "" && pathname === `${languagePrefix}/`;
+          return isExactHome || (isActive && routeName !== "")
+            ? "active !bg-[#006ba1] rounded-t-md !text-white !border-none"
+            : "inactive rounded-t-md";
+        }}
       >
         {displayName}
       </NavLink>
