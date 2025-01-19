@@ -26,9 +26,13 @@ export default function Index() {
   return (
     <div className="w-full bg-cover bg-center">
       <NavBar languageStrings={languageStrings} />
-      <div className="text-xl font-bold flex flex-col items-center gap-5">
-        <h1 className="pt-2">FUNDACIÓN HUELLAS DE LA CALLE - SANTA MARTA</h1>
-        <p>{languageStrings["home-page-tag-line"]}</p>
+      <div className="flex flex-col items-center gap-5">
+        <h1 className="pt-2 text-3xl font-extrabold">
+          FUNDACIÓN HUELLAS DE LA CALLE - SANTA MARTA
+        </h1>
+        <h2 className="font-bold text-xl">
+          {languageStrings["home-page-tag-line"]}
+        </h2>
         <img src={Logo} width="400" height="auto" alt="logo" />
       </div>
     </div>
