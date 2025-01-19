@@ -13,8 +13,9 @@ const HowToHelp = () => {
   const { languageStrings } = useLoaderData();
 
   return (
-    <div className="h-screen flex flex-col">
+    <div className="h-screen">
       <NavBar languageStrings={languageStrings} />
+
       <div className="px-6 pb-4 space-y-6">
         <header className="text-center">
           <h1 className="text-4xl font-extrabold mt-3 mb-2 text-gray-800">
@@ -28,8 +29,8 @@ const HowToHelp = () => {
           </p>
         </header>
 
-        <div className="flex gap-4">
-          <section className="bg-gray-50 p-6 rounded-lg shadow-md">
+        <div className="flex gap-4 mx-4">
+          <section className="bg-gray-50 p-6 rounded-lg shadow-md w-1/3">
             <h2 className="text-2xl font-bold mb-4 text-gray-800">
               Ways to Donate
             </h2>
@@ -62,7 +63,7 @@ const HowToHelp = () => {
             </ul>
           </section>
 
-          <section className="bg-gray-50 p-6 rounded-lg shadow-md">
+          <section className="bg-gray-50 p-6 rounded-lg shadow-md w-1/3">
             <h2 className="text-2xl font-bold mb-4 text-gray-800">
               Why Your Support Matters
             </h2>
@@ -77,7 +78,7 @@ const HowToHelp = () => {
             </ul>
           </section>
 
-          <section className="bg-gray-50 p-6 rounded-lg shadow-md">
+          <section className="bg-gray-50 p-6 rounded-lg shadow-md w-1/3">
             <h2 className="text-2xl font-bold mb-4 text-gray-800">
               Follow Us on Social Media
             </h2>
