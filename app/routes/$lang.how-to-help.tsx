@@ -14,7 +14,7 @@ const HowToHelp = () => {
 
   return (
     <PageWrapper languageStrings={languageStrings}>
-      <div className="px-6 pb-4 space-y-6 flex-grow">
+      <div className="px-6 pb-4 space-y-6 flex-grow bg-blue-100">
         <header className="text-center">
           <h1 className="text-4xl font-extrabold mt-3 mb-2 text-gray-800">
             {languageStrings["navigation"]["how-to-help"]}
