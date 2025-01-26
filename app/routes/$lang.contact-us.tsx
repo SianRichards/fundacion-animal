@@ -9,18 +9,18 @@ export const loader = async ({ params }: { params: { lang: string } }) => {
   return json({ languageStrings });
 };
 
-const AdoptableDogs = () => {
+const ContactUs = () => {
   const { languageStrings } = useLoaderData();
 
   return (
     <PageWrapper languageStrings={languageStrings}>
       <div className="flex-grow">
         <h1 className="text-3xl font-extrabold mt-10 text-center">
-          Here are our adoptable dogs
+          {languageStrings["contact-us"]["title"]}
         </h1>
       </div>
     </PageWrapper>
   );
 };
 
-export default AdoptableDogs;
+export default ContactUs;

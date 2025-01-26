@@ -1,10 +1,11 @@
 {
   "navigation": {
     "home": "Inicio",
-    "news": "Noticias",
-    "adoptable-dogs": "Perros adoptables",
     "about-us": "Sobre nosotros",
-    "how-to-help": "Cómo ayudar"
+    "how-to-help": "Cómo ayudar",
+    "our-programs": "Nuestros programas",
+    "impact-stories": "Historias de impacto",
+    "contact-us": "Contactanos"
   },
 
   "global": {
@@ -17,7 +18,7 @@
 
   "home": {
     "title": "Inicio",
-    "tag-line": "Ayudamos a los animales abandonados"
+    "tag-line": "Comprometidos con el cuidado y la protección de los animales abandonados en Santa Marta"
   },
 
   "about-us": {
@@ -26,7 +27,7 @@
   },
 
   "how-to-help": {
-    "helping-abandoned-animals": "Comprometidos con el cuidado y la protección de los animales abandonados en Santa Marta",
+    "helping-abandoned-animals": "Ayudando a los animales abandonados a encontrar esperanza y cuidado",
     "ways-to-donate": "Formas de Donar",
     "bancolombia-savings-account": "Bancolombia - Cuenta de Ahorros",
     "account-number": "Número de cuenta",
@@ -42,5 +43,20 @@
     "facebook": "Facebook",
     "join-facebook-group": "Únete al grupo de Facebook",
     "facebook-group-name": "Casos Santa Marta 🐾"
+  },
+
+  "contact-us": {
+    "title": "Contáctanos",
+    "content": ""
+  },
+
+  "impact-stories": {
+    "title": "Historias de impacto",
+    "content": ""
+  },
+
+  "our-programs": {
+    "title": "Nuestros programas",
+    "content": ""
   }
 }

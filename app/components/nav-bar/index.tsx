@@ -1,5 +1,4 @@
 import { NavLink, useLocation, useParams } from "@remix-run/react";
-import LanguageToggle from "../language-toggle";
 
 const Link = ({
   routeName,
@@ -43,16 +42,20 @@ const NavBar = ({ languageStrings }) => {
           displayName={languageStrings["navigation"]["about-us"]}
         />
         <Link
+          routeName="our-programs"
+          displayName={languageStrings["navigation"]["our-programs"]}
+        />
+        <Link
           routeName="how-to-help"
           displayName={languageStrings["navigation"]["how-to-help"]}
         />
         <Link
-          routeName="adoptable-dogs"
-          displayName={languageStrings["navigation"]["adoptable-dogs"]}
+          routeName="impact-stories"
+          displayName={languageStrings["navigation"]["impact-stories"]}
         />
         <Link
-          routeName="news"
-          displayName={languageStrings["navigation"]["news"]}
+          routeName="contact-us"
+          displayName={languageStrings["navigation"]["contact-us"]}
         />
       </ul>
     </nav>

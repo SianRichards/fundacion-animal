@@ -25,8 +25,8 @@ export default function Index() {
   const { languageStrings } = useLoaderData();
   return (
     <PageWrapper languageStrings={languageStrings}>
-      <div className="flex flex-col items-center flex-grow gap-5 py-5 bg-blue-100">
-        <h2 className="font-bold text-xl">
+      <div className="flex flex-col items-center flex-grow gap-5 py-4 bg-blue-100">
+        <h2 className="font-bold text-xl w-96 text-center">
           {languageStrings["home"]["tag-line"]}
         </h2>
         <img src={Logo} width="350" height="auto" alt="logo" />

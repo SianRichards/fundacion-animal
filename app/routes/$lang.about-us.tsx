@@ -23,7 +23,7 @@ const AboutUs = () => {
           <img src="https://placedog.net/300" className="rounded-md" />
           <img
             src={SantaMartaMap}
-            width="350"
+            width="300"
             height="auto"
             alt="Map of Santa Marta, Colombia"
             className="rounded-md"

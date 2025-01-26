@@ -1,10 +1,11 @@
 {
   "navigation": {
     "home": "Home",
-    "news": "News",
-    "adoptable-dogs": "Adoptable dogs",
     "about-us": "About us",
-    "how-to-help": "How to help"
+    "how-to-help": "How to help",
+    "our-programs": "Our programs",
+    "impact-stories": "Impact stories",
+    "contact-us": "Contact us"
   },
 
   "global": {
@@ -17,7 +18,7 @@
 
   "home": {
     "title": "Home",
-    "tag-line": "We help abandoned animals"
+    "tag-line": "Committed to the care and protection of abandoned animals in Santa Marta"
   },
 
   "about-us": {
@@ -26,7 +27,7 @@
   },
 
   "how-to-help": {
-    "helping-abandoned-animals": "Committed to the care and protection of abandoned animals in Santa Marta",
+    "helping-abandoned-animals": "Helping abandoned animals find hope and care",
     "ways-to-donate": "Ways to Donate",
     "bancolombia-savings-account": "Bancolombia - Savings Account",
     "account-number": "Account Number",
@@ -42,5 +43,20 @@
     "facebook": "Facebook",
     "join-facebook-group": "Join the Facebook Group",
     "facebook-group-name": "Santa Marta Cases 🐾"
+  },
+
+  "contact-us": {
+    "title": "Contact us",
+    "content": ""
+  },
+
+  "impact-stories": {
+    "title": "Impact stories",
+    "content": ""
+  },
+
+  "our-programs": {
+    "title": "Our programs",
+    "content": ""
   }
 }
